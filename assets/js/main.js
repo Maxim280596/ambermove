@@ -6,7 +6,7 @@
 **********************************************************************************/
 
   
-
+document.addEventListener("DOMContentLoaded", function(event) {
 $(function() {
 
     $('.portfolio .owl-carousel').owlCarousel({
@@ -193,3 +193,4 @@ function hideAndVisible(blockName) {
     $('.team .owl-carousel').trigger('replace.owl.carousel', html).trigger('refresh.owl.carousel');         
 
 } 
+});
