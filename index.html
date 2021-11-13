@@ -1781,6 +1781,7 @@
     <script src="assets/js/main.js?ver=16"></script>
     <script src="assets/js/safarismooth.js"></script>
     <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) {
 		jQuery(function(f){
 		    var element = f('.dark');
 		    f(window).scroll(function(){
@@ -1793,22 +1794,23 @@
 		        element['fade'+ (e(this).scrollTop() > 100 ? 'Out': 'In')](500);           
 		    });
 		});
+    });
 	</script>
 	<script>
-		$(window).scroll(function(){
+		document.addEventListener("DOMContentLoaded", function(event) {
     		$('.light').toggleClass('hide', $(this).scrollTop() > 200);
 		});
 	</script>
     <script>
-        $( document ).ready(function() {
+        document.addEventListener("DOMContentLoaded", function(event) {
             setTimeout(function(){
               var hubspot = document.getElementById('hubspot-messages-iframe-container');
               hubspot.classList.add('Opp');
-            }, 10000);
+            }, 1000);
         });
     </script>
     <script>
-        $( document ).ready(function() {   
+        document.addEventListener("DOMContentLoaded", function(event) { 
     	var video_button = document.getElementById("video_button");
         var video_button2 = document.getElementById("video_button2");
     	var video_play = document.getElementById("video_play");
@@ -1826,7 +1828,7 @@
         });
     </script>
     <script>
-        $( document ).ready(function() {   
+        document.addEventListener("DOMContentLoaded", function(event) { 
         $('.mainmenu-nav').on('click', '.nav-link', function(evt) {
             if(evt.target.hash !== '') {
                 $('html, body').animate({ scrollTop: $( evt.target.hash ).offset().top - 0 }, 1000);
@@ -1836,7 +1838,7 @@
     });
     </script>
     <script>
-        $( document ).ready(function() {  
+        document.addEventListener("DOMContentLoaded", function(event) { 
         var get_quote = document.getElementById("get_quote");
         var get_quote2 = document.getElementById("get_quote2");
         var get_quote3 = document.getElementById("get_quote3");
@@ -1883,7 +1885,7 @@
 
     </script>
     <script>
-        $( document ).ready(function() {  
+        document.addEventListener("DOMContentLoaded", function(event) {
         var openall1 = document.getElementById("openall1");
         var openall2 = document.getElementById("openall2");
         var openall3 = document.getElementById("openall3");
@@ -2072,7 +2074,7 @@
     });
     </script>
     <script>
-        $( document ).ready(function() { 
+        document.addEventListener("DOMContentLoaded", function(event) {
         var btn1 = document.getElementById("btn1");
         var btn2 = document.getElementById("btn2");
         var btn3 = document.getElementById("btn3");
